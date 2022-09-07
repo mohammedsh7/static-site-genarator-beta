@@ -1,0 +1,5 @@
+frontmatter
+httpwatcher
+python-slugify
+markdown
+jinja2

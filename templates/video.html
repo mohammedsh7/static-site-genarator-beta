@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <h1>{{data.metadata.title}}</h1>
+        <iframe 
+            src="https://www.youtube-nocookie.com/embed/{{data.metadata.video_id}}" 
+            title="Youtube video palyer"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        >
+        </iframe>
+        <p>
+            {{data.content}}
+        </p>
+    </div>
+{% endblock %}

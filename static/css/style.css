@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: aqua;
+}
+
+
+body {
+    background: rgba(29, 32, 33, 1);
+    color: #fafafa;
+}

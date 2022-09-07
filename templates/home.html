@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="title">Hey, I 'am Mohammed</h1>
+    <h2>Here is some content I've created.</h2>
+    <ul class="posts">
+        {% for post in data %}
+            {% if post.type == 'video' %}
+                <li>
+                    <span class="tag">Video</span>
+                    <a href="./videos/{{post.slug}}.html">{{post.title}}</a>
+                </li>
+            {% endif %}
+
+            {% if post.type == 'post' %}
+                <li>
+                    <span class="tag">Post</span>
+                    <a href="./posts/{{post.slug}}.html">{{post.title}}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endblock %}
